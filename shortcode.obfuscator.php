@@ -9,7 +9,7 @@ ShortcodeContainer::add('obfuscate', function($attributes) {
 		'text' => $obfuscated
 	);
 	$options = array_merge($defaults, $attributes);
-	return '<span class="obfuscated" data-content="'.html($options['text']).'">'.html($obfuscated).'</span>';
+	return '<span class="obfuscated" data-content="'.get_html($options['text']).'">'.get_html($obfuscated).'</span>';
 });
 
 ?>
